@@ -1,0 +1,85 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.pyc
+*.pdb
+*.egg
+*.egg-info/
+dist/
+build/
+develop-eggs/
+.eggs/
+pip-log.txt
+pip-delete-this-directory.txt
+*.manifest
+*.spec
+*.sqlite3
+
+# Django
+*.log
+*.pot
+*.pyc
+*.mo
+*.db
+local_settings.py
+db.sqlite3
+media/
+staticfiles/
+
+# Celery
+celerybeat-schedule
+celerybeat.pid
+
+# Postgres (if you have dump files etc.)
+*.dump
+*.sql
+
+# Environment
+.env
+*.env
+.env.*
+venv/
+env/
+ENV/
+.venv/
+.envrc
+
+# VS Code
+.vscode/
+
+# PyCharm
+.idea/
+
+# macOS
+.DS_Store
+
+# System
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# AWS/Boto
+*.pem
+*.key
+.aws/
+
+# Migrations (Optional: remove if you want to commit migrations)
+**/migrations/
+!**/migrations/__init__.py
+
+# Docker (if you add docker later)
+*.dockerfile
+docker-compose.override.yml
+
+# pytest
+.pytest_cache/
+.cache
+.coverage
+htmlcov/
+.tox/
+
+# Logs
+*.log
+logs/
