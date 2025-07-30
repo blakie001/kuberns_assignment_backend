@@ -47,11 +47,11 @@ def create_ec2_instance(instance_data, environment_obj):
         sg_id = create_security_group(ec2, f"webapp-{environment_obj.id}-sg")
 
         response = ec2.run_instances(
-            ImageId = "ami-053b0d53c279acc90",
+            ImageId = "ami-0f918f7e67a3323f0",
             InstanceType = 't2.micro',
             MinCount = 1,
             MaxCount = 1,
-            KeyName='kuberns_assignment',
+            KeyName='react',
             SecurityGroupIds=[sg_id],
             TagSpecifications=[
                 {
@@ -62,11 +62,12 @@ def create_ec2_instance(instance_data, environment_obj):
                     ]
                 }
             ],
-            UserData=f"""#!/bin/bash
-            apt-get update -y
-            apt-get install -y awscli
-            """
         )
+            # UserData=f"""#!/bin/bash
+            # apt-get update -y
+            # apt-get install -y awscli
+            # """
+
 
 
         instance = response["Instances"][0]

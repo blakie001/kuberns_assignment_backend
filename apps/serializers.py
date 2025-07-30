@@ -48,7 +48,7 @@ class WebAppSerializer(serializers.ModelSerializer):
             
 
             instance_data = {
-                "region" : "us-east-1"
+                "region" : "ap-south-1"
             }
             create_ec2_instance(instance_data, environment)
                 

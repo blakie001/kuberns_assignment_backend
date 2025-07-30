@@ -10,7 +10,7 @@ class WebApp(models.Model):
         ('us-east-1', 'US East (N. Virginia)'),
         ('us-west-1', 'US West (N. California)'),
         ('eu-west-1', 'EU (Ireland)'),
-        ('ap-southeast-1', 'Asia Pacific (Singapore)'),
+        ('ap-south-1', 'Asia Pacific (Singapore)'),
     ]
     TEMPLATE_CHOICES = [
         ('react', 'React'),
