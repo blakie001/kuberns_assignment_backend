@@ -77,31 +77,6 @@ def deploy_to_ec2(instance_id, repo_url, port, branch="main", env_vars={}, templ
     ssh.set_missing_host_key_policy(paramiko.AutoAddPolicy())
 
     private_key_string = """-----BEGIN RSA PRIVATE KEY-----
-MIIEogIBAAKCAQEAxTBCn1tmsMvtGRRb5FkDhF4ne51gW/RSTithwt1F4Lww4my/
-J8noWbnEQpKnh+rnfOAMgPd4LHNW6qUcH7/8SZ7am2bBNkUlcsUGDVC5uXU4PZYf
-iqjV7kL4N1LPXg6XzzCwp+xF4/bKAWgYW6jOhaMcjUXPPYP+vjgmxcgA/zMY6rfO
-Yu+1sgEcXWoQO2aImCu0F/uZcSnR+a21SkiP3f4Tr8WisvW1GLrk74eSeXzbzXrM
-GmntLzAxDHctZqDCj0VfFruYbuVyT1fqKW+XX+Xsq+amSdHRwVxBxEYKNBYw5mgE
-OQYUyr2as2yhPMCbKcUzsE+8IjSox+WtM8n8kQIDAQABAoIBAFPgbGZmta68f7Us
-UM44AuP6POc7ETLsIVp435PJFaE7y7t0sHcXTotkFpSO105cYG1gzFDLc0XNJgqX
-gvgKbSFPvgNeWQ9hqEVCg4mEbgvyTaL8yZvsp1s7B2RZCDYlFPQf7PTw7uXCIzkn
-8zyB+J8lu85oBHhRPjnhnrSAl9P1Q/IXurD7Oo4kr6VM8ek7XSOogLWxy54pLMOV
-tJMZ3cX6hu3LQFFR2ODlXnmynDXkfui3nysl4MwP5vcLO96y3t6IZEoW9sXQV5a7
-b0+CINRgo6GtkEQk66PDKQDFKHRnjfFMJ9bo+gyS42yvTQT0co/GnvIsveIy6dxb
-KD+LVzECgYEA6nfeXY7RZzGw+zabaOGmhEBF7mPmuGJCyW/Hd05Bt/yWNYDxo3gB
-/70fXkRDXCpBZkxYoSBtEBVvf/Z2vLTIaNq89iLNOXstyL3tBYy9SopHazM7WWzo
-bfwneI993JuqJrEKg6Ysv+o5/F/2Tzyn7YeRa8Ld2aQd8aRiGYulI30CgYEA10v6
-2efHxLjoJmxBHHP+PSja9dStYbJkkX/EGPgCdswSBjNKHDm/WmtDOefyv7Qx7bzy
-rGW+MrKedN9JUaDp50m9MlYBX0jfRmXjlAVYG91wXoka8zggbTas9Z3kL063tMwB
-aXDH7gUn2czijAksnpI0Fik69/tUv1GH4yiTIaUCgYBqjKp6bapvcL9yibA6C0E2
-nFarLK7uX4jmLWvBpchrqddA3SXyGVkfNHyKxA6wVWt+53bnUer+Ah+3UPNIcgcY
-zz5LxCjq1DVMIjMR8JEczJYD+zYfP0SopovxV5PkqsC58H5MsTloxTIwpBM0kuXl
-JVRKWjWi79fDteX2oeUbqQKBgEpkOZBTs0Y5MhYcr77aIY4WcNoim6o3TuKriCGs
-iIVt7AhybngkSAdBKuB2Uf2FkP75m8yP91FjQLdXc+kdtdSyOQqMhzraXjPf/uvl
-kNVIBYzUyRgjW6kBDHBuFyt1gqqZFx/M1XhcFbH/RoRmoyFDmXXS10pacKUO0epe
-2b/1AoGAOc5rGWA8Jk0T/+y7lwmB1UsX+4pladWv+33dgz5OZ+bt3X81UdHB3WTR
-28n0D56V/aKx+2Vg7oNK5tlAjcZvXvzAyLLF6MS8XOu+uOCBKqckoI9SdBvnq7HM
-u2AfJQ4nnb0s7WmfeWzKrTKW6Rpx3sZIJ2ZMsRvh2PLSmVqAvPk=
 -----END RSA PRIVATE KEY-----"""
 
     try:
